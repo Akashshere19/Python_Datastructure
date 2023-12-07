@@ -101,4 +101,32 @@ def accessElements(array,rowIndex,colIndex):
 
 accessElements(twoArray,1,4)    """
 
+"""# treaversing two dimension array
+
+import numpy as np
+twoArray = np.array([[12,34,5],[12,32,11],[15,18,23],[21,45,65]])
+print(twoArray)
+def traveseArray(array):
+  for i in range(len(array)):
+     for j in range(len(array[0])):
+       print(array[i][j])
+
+
+traveseArray(twoArray)"""
+"""
+# search in twodimension array
+import numpy as np
+twoArray = np.array([[12,34,5],[12,32,11],[15,18,23],[21,45,65]])
+print(twoArray)
+def serachTDArray(array,value):
+  for i in range(len(array)):
+    for j in range(len(array[0])):
+      if array[i][j] == value:
+         return "value is at index "+ str(i)+" "+str(j)
+
+  return "element is not found" 
+
+print(serachTDArray(twoArray,45))    """
+
+# Deleting in two dimension array
 
