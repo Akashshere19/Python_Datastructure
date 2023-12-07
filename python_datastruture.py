@@ -128,5 +128,12 @@ def serachTDArray(array,value):
 
 print(serachTDArray(twoArray,45))    """
 
-# Deleting in two dimension array
+"""# Deleting in two dimension array
+
+import numpy as np
+twoArray = np.array([[12,34,5],[12,32,11],[15,18,23],[21,45,65]])
+print(twoArray)
+newArray = np.delete(twoArray,0,axis=1)
+print("new array:")
+print(newArray)"""
 
