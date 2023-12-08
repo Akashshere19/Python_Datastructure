@@ -137,3 +137,127 @@ newArray = np.delete(twoArray,0,axis=1)
 print("new array:")
 print(newArray)"""
 
+######################## List ############################
+"""
+# accessing/traversing list
+lst1 = ['python','java','c++','php']
+print(lst1)
+# print(len(lst1))
+# print(lst1[2])
+# print('c++' in lst1)
+# print(lst1[-2])
+# print(lst1[-1:-2:-1])
+for i in range(len(lst1)):
+  lst1[i] = lst1[i]+ " advance"
+  print(lst1)
+
+empty = []
+for i in empty:
+  print("it is none")  """
+
+"""
+# Update/Insert list
+
+lst1 = [3,1,9,5,7,2]
+print(lst1)
+# lst1[2]='hello'
+# print(lst1)
+# lst1[4] = 4.3
+# print(lst1)
+bye = 467
+lst1.insert(4,bye)
+print(lst1)
+
+lst1.append(89)
+print(lst1)
+
+lst1.extend([9,3,'say'])
+print(lst1)"""
+
+# Slice in list
+lst1 = [3,1,9,5,7,2]
+print(lst1[0:4:])
+lst1[1:3] = ['a','c','t',2] # add list in 1st list
+print(lst1)
+
+
+# lst1.pop()
+# print(lst1)
+# l = lst1.pop(3)
+# print(l)
+# print(lst1)
+
+# del lst1[3]
+# print(lst1)
+# del lst1[1:3]
+# print(lst1)
+
+# lst1.remove(2) # required element
+# print(lst1)
+# lst1.remove(2)
+# print(lst1)
+
+"""
+#searching element in list
+tar  = 5
+if tar in lst1:
+  print('this element is in list')
+
+else:
+  print('not found')
+
+# linear search
+
+def linear_search(p_list,p_tar):
+    for i,value in enumerate(p_list):
+      if value  == p_tar:
+        return i
+    return -1
+
+print(linear_search(lst1,tar)) """
+
+"""
+lst_1st = [2,5,8,3,6,9]
+lst_2nd = [5,89,10,12,15]
+
+con_lst = lst_1st + lst_2nd
+print(con_lst)"""
+
+"""
+# Operators in list
+lst = [2,5,6,0,-7,-8]
+print(lst * 4)
+
+print(len(lst))
+print(max(lst))
+print(min(lst))
+print(sum(lst))"""
+
+"""
+strr = 'string string split'
+
+lst = list(strr)
+print(lst)
+print(strr.split())
+
+b = 'string-string-split'
+delimiter = 'a'
+str1 = b.split(delimiter)
+print(str1)
+print(delimiter.join(str1)) """
+
+"""lst = [2,9,12,6,7,4]
+lst.sort()
+print(lst)
+lst.append([3,9,5])
+print(lst)"""
+
+# list comprehnsion
+
+lst = [3,7,2]
+new_lst = []
+for i in lst:
+  mult_2 = i * 2
+  new_lst.append(mult_2)
+
+print(new_lst)  
